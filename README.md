@@ -1,8 +1,8 @@
-# Spotiapp
+# SpotifyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
-View the content in [SpotiApp](https://merimari0510.github.io/spotify/).
+View the content in [SpotifyApp](https://merimari0510.github.io/spotify/).
 
 ## Development server
 
