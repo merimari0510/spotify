@@ -1,0 +1,29 @@
+.bg-footer {
+  background: #23324d;
+}
+
+img.rounded-circle.w-15 {
+  width: 37% !important;
+}
+
+.title-footer {
+  color: #caced9;
+}
+
+li a {
+  color: white;
+}
+
+.bg-footer a:hover {
+  color: #e15dac;
+}
+
+i.fab {
+  color: #caced9;
+  font-size: 23px;
+  padding: 0px 5px;
+}
+
+i.fab:hover {
+  color: #e15dac;
+}

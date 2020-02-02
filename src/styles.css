@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-light.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-book.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-medium.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-bold.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-black.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+    background-color: white;
+    color: #505050 !important;
+    font-family: Circular, Helvetica, Arial, sans-serif
+}
+
+.h-75v {
+  height: 75vh;
+}
+
+.panel-logo {
+  background-image: -moz-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  background-image: -ms-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  background-image: -webkit-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  color: white;
+}
+
+.apartat-2 {
+  background-image: -moz-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  background-image: -ms-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  background-image: -webkit-linear-gradient(-148deg, #F037A5 -8%, #23324D 98%);
+  color: white;
+}
+
+
+hr {
+    border-color: white;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    margin-left: 5px;
+}
+
+.img-thumb {
+    width: 50px;
+    height: 50px;
+}
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

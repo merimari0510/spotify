@@ -1,0 +1,67 @@
+.panel-logo h1 {
+  font-size: 3.5rem;
+}
+
+.panel-logo .lead {
+  font-size: 1.75rem;
+}
+
+.destacados, .newReleases {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.destacados svg {
+  height: 100px;
+  margin: 0 auto;
+}
+
+.destacados h3 {
+  color: #4e6289;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  margin-top: 2rem;
+}
+
+.frase h2 {
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.newReleases h2 {
+  margin-bottom: 2rem;
+}
+
+.newReleases .lead {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .frase h2 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .panel-logo h1, h2 {
+    font-size: 2.3rem;
+  }
+
+  .frase h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}

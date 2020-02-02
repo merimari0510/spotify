@@ -1,0 +1,44 @@
+.banner-artist {
+  background: #f8f8f8;
+}
+
+.banner-artist .img-thumbnail {
+  background: #F037A5;
+  margin: 0 auto;
+}
+
+.banner-artist a {
+  color: #7387ae;
+}
+
+.banner-artist a:hover {
+  color: #4e6289;
+  text-decoration: none;
+}
+
+.banner-artist button {
+  background: #F037A5;
+  color: white;
+  border: 1px solid #F037A5;
+}
+
+.banner-artist button:hover {
+  background: #c02882;
+  border-color: #c02882;
+}
+
+.first {
+  background: #7387ae;
+  color: white;
+}
+
+.d-flex.flex-row.justify-content-center.align-items-center.w-100.p-3:nth-of-type(2n) {
+  background: #eff0f1;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+
+.img-thumb {
+  height: auto;
+  width: 100%;
+}

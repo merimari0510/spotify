@@ -1,0 +1,13 @@
+<div class="d-flex flex-column justify-content-center align-items-center w-100 h-75v apartat-2 text-center search">
+  <h1>Busca tu artista favorito</h1>
+  <div class="container">
+    <input #termino (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar artista..." type="text">
+  </div>
+</div>
+
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<div *ngIf=" !loading && elementoBuscado!='' " class="container text-center">
+  <h2 class="animated fadeIn">Resultados encontrados: <span class="destacat">{{ elementoBuscado }}</span> </h2>
+  <app-tarjetas [items]="artistas"></app-tarjetas>
+</div>
