@@ -33,23 +33,31 @@ export class ArtistaComponent {
 
     this.loadingArtist = true;
 
-    this.spotify.getArtista( id )
+    this.spotify.getToken()
+      .subscribe( (data: any) => {
+        this.spotify.setToken(data.access_token);
+        this.spotify.getArtista( id )
           .subscribe( artista => {
             console.log(artista);
             this.artista = artista;
 
             this.loadingArtist = false;
           });
+        });
 
   }
 
   getTopTracks( id: string ) {
 
-    this.spotify.getTopTracks( id )
+    this.spotify.getToken()
+      .subscribe( (data: any) => {
+        this.spotify.setToken(data.access_token);
+        this.spotify.getTopTracks( id )
             .subscribe( topTracks => {
               console.log(topTracks);
               this.topTracks = topTracks;
             });
+          });
 
   }
 

@@ -19,7 +19,10 @@ export class SongsComponent {
     this.loading = true;
     this.error = false;
 
-    this.spotify.getNewReleases(20)
+    this.spotify.getToken()
+      .subscribe( (data: any) => {
+        this.spotify.setToken(data.access_token);
+        this.spotify.getNewReleases(20)
         .subscribe( (data: any) => {
           this.nuevasCanciones = data;
           this.loading = false;
@@ -30,5 +33,6 @@ export class SongsComponent {
           console.log(errorServicio);
           this.mensajeError = errorServicio.error.error.message;
         });
+      });
   }
 }

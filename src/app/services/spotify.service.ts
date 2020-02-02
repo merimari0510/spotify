@@ -8,22 +8,38 @@ import { map } from 'rxjs/operators';
 })
 export class SpotifyService {
 
+  token_type:string;
+  access_token:string;
+  client_id: string;
+  client_secret: string;
+
   constructor(private http: HttpClient) {
     console.log('Spotify Service Listo');
+
+    this.client_id = "75e1d165a3ef435fb08a9816c84c2a71";
+    this.client_secret = "f1e7ebd3bb614a3d82273200dba6f94f";
+  }
+
+  setToken( token:string ) {
+    this.access_token = token;
+  }
+
+  getToken() {
+    const url = "https://spotify-get-token.herokuapp.com/spotify/" + this.client_id + "/" + this.client_secret + "";
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded'
+    });
+    return this.http.get(url, { headers });
   }
 
   getQuery( query: string ) {
-
     const url = `https://api.spotify.com/v1/${ query }`;
-
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQDYFZgPb8Iokh1WlK4fZsK8ue510d6Ww5D8r7cnjzw1tfJFn0OOtC99mlBb4W0c0m4UJY-5qKzC77mRRwI'
+      'Authorization': 'Bearer ' + this.access_token;
     });
-
     return this.http.get(url, { headers });
 
   }
-
 
   getNewReleases( limit: number ) {
 
